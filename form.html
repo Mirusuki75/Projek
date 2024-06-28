@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<link rel="stylesheet" href="header.css">
+<style>
+    .content {
+        flex-direction: row;
+        display: flex;
+    }
+    .content > div {
+        display: flex;
+        flex: 1;
+        align-content: center;
+        justify-content: center;
+    }
+    .table_person {
+        border: 5px ridge black;
+    }
+    .footer > p{
+        text-align: end;
+    }
+</style>
+</head>
+<body>
+    <nav class="container">
+        <img src="https://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19705.png" class="logo" width="40" height="40"/>
+
+        <div class="home"><a href="a">Home</a></div>
+        <div class="daftar buku"><a href="a">Daftar Buku</a></div>
+        <div class="logout"><a href="a">Logout</a></div>
+    </nav>
+
+    <header>
+        <h1>Form Peminjaman</h1>
+        <p>Ini adalah website tempat peminjam buku di BOOKSCLX</p>
+        <br>
+        <label for="name peminjam">Nama peminjam :</label>
+        <input id="name peminjam" type="text"/>
+        <br>
+        <label for="tanggal peminjaman">Tanggal Peminjaman :</label>
+        <input id="tanggal peminjam" type="date" min="1" max="31"/>
+        <br>
+        <label for="buku yang dipinjam">Buku yang dipinjam :</label>
+        <input id="buku yang dipinjam" type="text"/>
+        <br>
+        <p><b>Jenis Buku?</b></p>
+        <select>
+            <option>Novel</option>
+            <option>Ensiklopedia</option>
+            <option>Manga</option>
+        </select>
+        <br>
+        <input type="submit" value="submit">
+    </header>
+
+    <main class="content">
+
+        <div>
+            <h2>Data Peminjaman</h2>      
+        </div>
+
+        <div>
+            <table class="table_person">
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Peminjaman</th>
+                    <th>Buku yang dipinjam</th>
+                    <th>Tanggal Pengembalian</th>
+                    <th>Jenis Buku</th>
+                    <th>Profile</th>
+                </tr>
+                <tr>
+                    <td>Febri</td>
+                    <td>14 Juni 2024</td>
+                    <td>Kado Terbaik</td>
+                    <td>24 Juni 2024</td>
+                    <td>Novel</td>
+                    <td><a href="a">Klik disini</a></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>@BOOKSCLX 2024</p>
+    </footer>
+</body>
+</html>

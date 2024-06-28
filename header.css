@@ -1,0 +1,17 @@
+.container{
+  border: 5px solid rgb(28, 29, 30);
+  display: flex;
+  justify-content: flex-end;  
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: white;
+    border: 2px solid;
+    background-color: rgb(103, 103, 103);
+}
+.logo {
+    margin-right: auto;
+}
